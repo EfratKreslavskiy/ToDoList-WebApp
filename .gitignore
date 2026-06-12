@@ -1,0 +1,11 @@
+node_modules
+.dist
+/dist
+.vite
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/tasks.json
+!.vscode/mcp.json
+*.log
+.DS_Store
