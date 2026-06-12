@@ -1,11 +1,36 @@
 # ToDoList-WebApp
 
-A workspace for planning a future to-do list web app.
+A client-side to-do list web app built with Vue 3, TypeScript, and Tailwind CSS. All data is saved automatically to browser Local Storage — no backend required.
 
-## Included
-- Spec doc - all the details of the web app, including Data Model, API Design, User Stories, and Acceptance Criteria in Given/When/Then format.
-- Copilot workspace instructions
-- ADR doc - contains record of my architecture decisions, including pros, cons, and rejected alternatives.
+![App screenshot](HomePage.png)
 
-## Next Step
-Choose the app framework and stack when you are ready to build the actual application.
+## Features
+
+- Create multiple named to-do lists, each with a custom background color
+- Add, edit, delete, and reorder tasks with drag-and-drop
+- Mark tasks as completed (strikethrough) or important (starred, pinned to top)
+- Copy a full list as plain text to the clipboard
+- All changes persist automatically — survives page refresh and browser restart
+
+## Tech Stack
+
+- **Vue 3** with Composition API and `<script setup>`
+- **Vue Router** for client-side navigation between Home and List views
+- **TypeScript** throughout
+- **Tailwind CSS v4** for styling
+- **vuedraggable** for drag-and-drop task ordering
+- **Browser Local Storage** for persistence
+
+## Running Locally
+
+```bash
+npm install
+npm run dev
+```
+
+Then open the localhost link in your browser.
+
+## Project Docs
+
+- [`SPEC.md`](SPEC.md) — Full feature spec with data model, user stories, and acceptance criteria
+- [`ADR.md`](ADR.md) — Architecture decision records with rationale and rejected alternatives

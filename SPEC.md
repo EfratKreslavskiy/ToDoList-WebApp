@@ -52,31 +52,33 @@ Create a simple, client-side web app for tracking personal tasks.
 - Allow selecting a background color for the list
 - When a color is selected, only that list card changes
 - Other list cards may have other colors
-- Background color options should be light colors so text is easily visible
+- Background color options should be clearly distinguishable, classic named colors (for example Red, Orange, Green, Blue, Purple, Brown, Teal)
+- Color buttons should use their relevant color as the button background, with dark text for readability
+- Colors should be darker than pastel shades while still allowing readable text and UI contrast
 - Do not provide more than 8 color options
 - Include a button to add a new task
 - New tasks should appear at the bottom of tasks
 - Allow editing task text by clicking the task
 - Allow deleting individual tasks
-- Allow marking tasks complete by checking a box with rounded edges to the right of the task item
+- Allow marking tasks complete by checking a box with rounded edges on the left side of the task item, next to the task text
 - Completed tasks:
 	- Display with strikethrough text
-	- Display with reduced opacity or lighter text color
-	- Move below incomplete tasks
+	- Remain in the same single list section (no separate completed section)
+	- Do not automatically move to the bottom when completed
 - Allow marking tasks as Important by clicking an important icon such as a star, flag, or badge
 - Important tasks:
-	- Appear above normal incomplete tasks
+	- Always appear above non-important tasks within the same single list section
 	- Display a visual indicator such as a star, flag, or badge
 - Allow drag-and-drop reordering
 - Reordering should save automatically
 - Include a copy-to-clipboard button near the title that copies the entire list with its title in a readable text format
 
 ## Task Ordering Rules
-- Order should always be:
-	- Important incomplete tasks
-	- Normal incomplete tasks
-	- Completed tasks
-- Within each section, if the user changes task order, the drag-and-drop order should be preserved
+- All tasks should appear in one single section
+- Important tasks should always appear at the top of that section
+- Non-important tasks should appear below important tasks
+- Completed tasks should stay in their current area of the same section and only change visual style (strikethrough)
+- Drag-and-drop should preserve user-defined order while respecting the important-first rule
 
 ## User Experience
 - Professional modern appearance
@@ -99,7 +101,7 @@ Create a simple, client-side web app for tracking personal tasks.
 
 ## Accessibility
 - All buttons should have clear labels
-- Sufficient color contrast
+- Sufficient color contrast, especially dark text on light backgrounds and light text on dark backgrounds
 - Keyboard navigation should work
 - Confirmation modals should be keyboard accessible
 
